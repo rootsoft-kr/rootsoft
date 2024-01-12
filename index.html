@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ROOTSOFT</title>
+<!-- Stylesheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+ <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<script type="text/javascript">
+     
+	
+
+	  function goScroll(page){
+	  
+			// 1. pre태그의 위치를 가지고 있는 객체를 얻어온다. => offset 객체
+          var offset = $("#"+page).offset();
+ 
+          // offset은 절대 위치를 가져온다. offset.top을 통해 상단의 좌표를 가져온다.
+			$('html').animate({scrollTop : offset.top-100}, 700);
+
+	  }
+
+
+	  
+	$(document).ready( function() {
+
+		//$("#headers").load("header.html");  // 원하는 파일 경로를 삽입하면 된다
+		//$("#footers").load("footer.html");  // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
+
+	});
+	
+
+
+	function goHome(){
+	
+		location.replace('index.html') 
+
+	}
+
+</script>
+
+
+<body>
+
+<div class="page-wrapper">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+ 	
+    <!-- Main Header-->
+    <header class="main-header header-style-one" id="headers">
+ 		
+		<!--Header-Upper-->
+        <div class="header-upper">
+        	<div class="auto-container">
+            	<div class="clearfix">
+                	
+                	<div class="pull-left logo-box">
+                    	<div class="logo"><a href="index.html"><img src="images/ROOTSOFT_LOGO.png" alt="" title="ROOTSOFT"></a></div>
+                    </div>
+                   	
+                   	<div class="nav-outer clearfix">
+                    
+						<!-- Main Menu -->
+						<nav class="main-menu navbar-expand-md">
+							<div class="navbar-header">
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+
+							<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+								<ul class="navigation clearfix">
+									<li class="dropdown"><a href="index.html" onClick="goHome()">Home</a></li>
+									<li class="dropdown"><a href="#">Company</a>
+										<ul>
+											<li><a href="about.html">CEO 인사말</a></li>
+											<li><a href="history.html">연혁</a></li>
+											<li><a href="organization.html">Team 소개</a></li>
+										</ul>
+									</li>
+									<li class="dropdown"><a href="#">Business</a>
+										<ul>
+											<li><a href="service1.html">시스템 구축·운영</a></li>
+											<li><a href="service3.html">R&D</a></li>
+											<li><a href="service2.html">IT 컨설팅</a></li>
+										</ul>
+									</li>
+									<li class="dropdown"><a href="#">Portfolio</a>
+										<ul>
+											<li><a href="contents1.html">영업관리 시스템</a></li>
+											<li><a href="contents2.html">차량관제 솔루션</a></li>
+											<li><a href="contents3.html">출입차량통제 관리 Kiosk</a></li>
+											<li><a href="contents4.html">잔반 및 칼로리 측정 시스템</a></li>
+                                            <li><a href="contents2-1.html">운행기록 분석 시스템</a></li>
+											<li><a href="contents7.html">Web 자동화 처리 솔루션</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							
+						</nav>
+						
+						<div class="outer-box">
+							<ul class="nav-box">
+								<li></li>
+								<li><a href="contact.html">Contact us</a></li>
+							</ul>
+						</div>
+						
+					</div>
+                   
+                </div>
+            </div>
+        </div>
+        <!--End Header Upper-->
+        
+    </header>
+    <!--End Main Header -->
+	
+	<!--Banner Section-->
+    <section class="banner-section-two">
+		<div class="patern-layer-one" style="background-image: url(images/background/pattern-1.png)"></div>
+		<div class="patern-layer-two" style="background-image: url(images/background/pattern-2.png)"></div>
+		<div class="patern-layer-three" style="background-image: url(images/background/pattern-3.png)"></div>
+
+		<!-- Icons -->
+		<div class="icons parallax-scene-1">
+			<!-- Icon One -->
+			<div data-depth="0.20" class="icon-one parallax-layer" style="background-image:url(images/icons/icon-2.png)"></div>
+			<div data-depth="0.20" class="icon-two parallax-layer" style="background-image:url(images/icons/icon-3.png)"></div>
+			<div data-depth="0.20" class="icon-three parallax-layer" style="background-image:url(images/icons/icon-4.png)"></div>
+			<div data-depth="0.20" class="icon-four parallax-layer" style="background-image:url(images/icons/icon-5.png)"></div>
+			<div data-depth="0.20" class="icon-five parallax-layer" style="background-image:url(images/icons/icon-6.png)"></div>
+		</div>
+		
+		<div class="main-slider-carousel owl-carousel owl-theme">
+		
+			<div class="slide">
+				<div class="auto-container">
+					<div class="row clearfix">
+						<!-- Content Column -->
+						<div class="content-column col-lg-8 col-md-12 col-sm-12">
+							<div class="inner-column">
+								<div class="pattern-layer" style="background-image:url(images/background/pattern-13.png)"></div>
+								<h1>IT Total Service 전문기업 <br> ROOTSOFT</h1>
+								<div class="text">
+									고객의 요구를 신속하고 안전하게 제공하기 위해 우수한 품질 체계를 바탕으로 시스템을 구축합니다. <br/>
+									H/W 시스템 구축, 백업시스템 구축, 네트워크 구축 등을 통해 업무의 효율성을 높여드립니다.
+								</div>
+								<div class="btn-box">
+									<a href="about.html" class="theme-btn btn-style-two"><span class="txt">회사소개 바로가기</span></a>
+								</div>
+							</div>
+						</div>
+						<!-- Image Column -->
+						<div class="image-column col-lg-4 col-md-12 col-sm-12">
+							<div class="inner-column">
+								<div class="pattern-layer-two" style="background-image:url(images/background/pattern-13.png)"></div>
+								<figure class="image titlt" data-tilt data-tilt-max="4">
+									<img src="images/background/root_bg1.png" alt="">
+								</figure>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="slide">
+				<div class="auto-container">
+					<div class="row clearfix">
+						<!-- Content Column -->
+						<div class="content-column col-lg-8 col-md-12 col-sm-12">
+							<div class="inner-column">
+								<div class="pattern-layer" style="background-image:url(images/background/pattern-13.png)"></div>
+								<h1>IT Consulting <br> </h1>
+								<div class="text">
+									㈜루트소프트는 고객사의 현안과 Needs를 분석하여 효과적이고 체계적인 정보전략 방안과 <br/>
+									문제해결 방향을 제공함으로써 고객의 비즈니스 목표를 달성할 수 있도록 최상의 컨설팅을 제공합니다.
+								</div>
+								<div class="btn-box">
+									<a href="about.html" class="theme-btn btn-style-two"><span class="txt">회사소개 바로가기</span></a>
+								</div>
+							</div>
+						</div>
+						<!-- Image Column -->
+						<div class="image-column col-lg-4 col-md-12 col-sm-12">
+							<div class="inner-column">
+								<div class="pattern-layer-two" style="background-image:url(images/background/pattern-13.png)"></div>
+								<figure class="image titlt" data-tilt data-tilt-max="4">
+									<img src="images/background/root_bg2.png" alt="">
+								</figure>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slide">
+				<div class="auto-container">
+					<div class="row clearfix">
+						<!-- Content Column -->
+						<div class="content-column col-lg-8 col-md-12 col-sm-12">
+							<div class="inner-column">
+								<div class="pattern-layer" style="background-image:url(images/background/pattern-13.png)"></div>
+								<h1 style="font-size:55px;">최고의 품질과 최고의 Service<br> IT 시스템 구축·운영</h1>
+								<div class="text">
+									㈜루트소프트는 국내 최고의 시스템 구축 및 유지보수 업체로 고객에게 최상의 가치를 제공합니다.<br/>
+									SI 사업 및 R&D 등의 종합 서비스를 제공하고 있습니다.
+								</div>
+								<div class="btn-box">
+									<a href="about.html" class="theme-btn btn-style-two"><span class="txt">회사소개 바로가기</span></a>
+								</div>
+							</div>
+						</div>
+						<!-- Image Column -->
+						<div class="image-column col-lg-4 col-md-12 col-sm-12">
+							<div class="inner-column">
+								<div class="pattern-layer-two" style="background-image:url(images/background/pattern-13.png)"></div>
+								<figure class="image titlt" data-tilt data-tilt-max="4">
+									<img src="images/background/root_bg3.png" alt="">
+								</figure>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+		
+	</section>
+	<!--End Banner Section-->
+
+	
+	
+	<!-- Services Section -->
+    <section class="services-section endline">
+		<!-- Title Box -->
+		<div class="title-box text-center" id="Business">
+			<h2 class="sv-txt">주요 사업 분야</h2>
+			<div class="text">Business</div>
+			<div class="h15 under"></div>
+		</div>
+		<div class="auto-container">
+
+			<div class="inner-container">
+			
+				<div class="pattern-layer" style="background-image:url(images/background/pattern-14.png)"></div>
+				<div class="pattern-layer-two" style="background-image:url(images/background/pattern-14.png)"></div>
+				
+				<div class="row clearfix">
+					
+					<!-- Service Block -->
+					<div class="service-block col-lg-4 col-md-6 col-sm-12">
+						<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+							<div class="icon-outer">
+								<div class="icon-box">
+									<img src="images/resource/service-1.png" alt="" />
+								</div>
+							</div>
+							<h5><a href="service1.html">시스템 구축·운영</a></h5>
+							<div class="text mgb-15" >
+           						   시스템 설계 및 분석 <br/>
+								   WEB·APP·MOBILE·KIOSK 개발<br/>
+								   데이터 이관 및 구축<br/>
+								   데이터 마이그레이션<br/>
+								   시스템 운영 및 유지보수<br/>
+							</div>
+							<a href="service1.html" class="theme-btn btn-style-five"><span class="txt">more...</span></a>
+						</div>
+						
+					</div>
+					
+					<!-- Service Block -->
+					<div class="service-block col-lg-4 col-md-6 col-sm-12">
+						<div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+							<div class="icon-outer">
+								<div class="icon-box">
+									<img src="images/resource/service-3.png" alt="" />
+								</div>
+							</div>
+							<h5><a href="service3.html">R&D</a></h5>
+							<div class="text mgb-15">
+								최적화 예측 알고리즘<br/>
+								WEB 스크랩핑 · 크롤링 · 자동화<br/>
+								영상 · 위험, 행동 분석<br/>
+								이미지 데이터셋 인식 및 분석<br/>
+								빅데이터 플랫폼<br/>
+							</div>
+							<a href="service3.html" class="theme-btn btn-style-five"><span class="txt">more...</span></a>
+						</div>
+					</div>
+					
+					<!-- Service Block -->
+					<div class="service-block col-lg-4 col-md-6 col-sm-12">
+						<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+							<div class="icon-outer">
+								<div class="icon-box">
+									<img src="images/resource/service-2.png" alt="" />
+								</div>
+							</div>
+							<h5><a href="service2.html">IT 컨설팅</a></h5>
+							<div class="text mgb-15">
+								 전략 컨설팅 (ISP)<br/>
+								 프로세스 혁신 (PI)<br/>
+    							 업무 재설계 (BPR)<br/>
+								 IT 아키텍처<br/>
+								<br/>
+							</div>
+							<a href="service2.html" class="theme-btn btn-style-five"><span class="txt">more...</span></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Services Section -->
+	
+	<!-- Agency Section -->
+    <section class="agency-section">
+		<div class="pattern-layer" style="background-image:url(images/background/3.png)"></div>
+		<div class="auto-container">
+			<div class="under"></div>
+
+			<!-- Sec Title -->
+			<div class="sec-title text-center">
+				<h2>주요 구축 사례</h2>
+					성공적인 프로젝트를 위해 (주)루트소프트가 함께 하겠습니다.<br>
+			</div>
+			
+			<div class="agency-carousel owl-carousel owl-theme">
+				<div class="slide">
+					<div class="row clearfix">
+					
+						<!-- Agency Block -->
+						<div class="agency-block col-lg-4 col-md-6 col-sm-12">
+							<div class="inner-box">
+								<div class="icon-outer">
+									<div class="icon"><img src="images/icons/agency-0.png" alt="" /></div>
+								</div>
+								<h4 class="titleFont"><a href="contents1.html">쿠쿠전자 영업관리 시스템</a></h4>
+								<div class="text">
+									업무중심의 판매 관리 시스템 (POS & WEB) 도입, 정산 관리, 재고 및 매출관리, 영업분석 기능, 판매고객 정보관리 등 유통관점의 실시간 판매 데이터 관리 등에 최적화 된 영업관리 시스템 신규 구축
+								
+								</div>
+								<a class="read-more" href="contents1.html">read more <span class="arrow"><img src="images/icons/right-arrow.png" alt="" /></span></a>
+							</div>
+						</div>
+						
+						<!-- Agency Block -->
+						<div class="agency-block col-lg-4 col-md-6 col-sm-12">
+							<div class="inner-box">
+								<div class="icon-outer">
+									<div class="icon"><img src="images/icons/agency-2.png" alt="" /></div>
+								</div>
+								<h4 class="titleFont"><a href="contents2.html">차량관제 솔루션</a></h4>
+								<div class="text">
+									차량관제 솔루션은 실시간 차량위치관제, 경제/안전운전 관리, 온도 모니터링, eTAS(한국교통안전공단)에 DTG자료 제출을 지원하며, LDT-300BS, GD-1000제품과 전용 APP을 제공하는 서비스입니다. 
+									
+								</div>
+								<a class="read-more" href="contents2.html">read more <span class="arrow"><img src="images/icons/right-arrow.png" alt="" /></span></a>
+							</div>
+						</div>
+						
+						<!-- Agency Block -->
+						<div class="agency-block col-lg-4 col-md-6 col-sm-12">
+							<div class="inner-box">
+								<div class="icon-outer">
+									<div class="icon"><img src="images/icons/agency-7.png" alt="" /></div>
+								</div>
+								<h4 class="titleFont"><a href="contents3.html">현대차 출입차량통제 관리 Kiosk</a></h4>
+								<div class="text">
+									차량 출입에 관한 제반사항을 Kiosk를 통해 전산관리를 통하여 실시간으로 집계 · 관리하고, 공장출입을 전산으로 출입명부를 관리하기 때문에 공장내에서 작업자의 안전과 보안을 향상시키기 위한 시스템
+
+									
+								</div>
+								<a class="read-more" href="contents3.html">read more <span class="arrow"><img src="images/icons/right-arrow.png" alt="" /></span></a>
+							</div>
+						</div>
+						
+						<!-- Agency Block -->
+						<div class="agency-block col-lg-4 col-md-6 col-sm-12">
+							<div class="inner-box">
+								<div class="icon-outer">
+									<div class="icon"><img src="images/icons/agency-8.png" alt="" /></div>
+								</div>
+								<h4 class="titleFont"><a href="contents4.html">잔반 및 칼로리 측정 시스템</a></h4>
+								<div class="text">당일 1인당 기준 식재료 무게와 식판에 올려진 식재료 무게의 비례율에따라 버려지는 식재료비를 산출하고, 고객에게 오늘 버려지는 식재료 비용 정보와 오늘 이용객의 버려지는 식재료 평균 비용 정보를 제공</div>
+								<a class="read-more" href="contents4.html">read more <span class="arrow"><img src="images/icons/right-arrow.png" alt="" /></span></a>
+							</div>
+						</div>
+						
+						<!-- Agency Block -->
+						<div class="agency-block col-lg-4 col-md-6 col-sm-12">
+							<div class="inner-box">
+								<div class="icon-outer">
+									<div class="icon"><img src="images/icons/agency-2.png" alt="" /></div>
+								</div>
+								<h4 class="titleFont"><a href="contents2.html">eTAS 운행기록 분석시스템</a></h4>
+								<div class="text">
+									자동차의 순간속도, 분당 엔진회전수(RPM), 브레이크 신호, GPS, 방위각, 가속도 등의 정보를 실시간 수집하여 운전자의 운전습관을 분석하여 안전운전, 과속, 급감속 등 운전자의 안전관리를 위한 분석시스템
+									
+								</div>
+								<a class="read-more" href="contents2-1.html">read more <span class="arrow"><img src="images/icons/right-arrow.png" alt="" /></span></a>
+							</div>
+						</div>
+						
+						<!-- Agency Block -->
+						<div class="agency-block col-lg-4 col-md-6 col-sm-12">
+							<div class="inner-box">
+								<div class="icon-outer">
+									<div class="icon"><img src="images/icons/agency-6.png" alt="" /></div>
+								</div>
+								<h4 class="titleFont"><a href="#">Web 자동화 처리 솔루션</a></h4>
+								<div class="text">정보는 일정한 기준에 의해 선별되고 정리되었을 때 비로서 데이터로써의 가치를 지니게 됩니다.​ 루트소프트는 범람하는 정보의 홍수 속에서 원석을 보석으로 가공하는 데이터 마이닝 기업입니다.</div>
+								<a class="read-more" href="contents7.html">read more <span class="arrow"><img src="images/icons/right-arrow.png" alt="" /></span></a>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				
+			</div>
+			
+		 </div>
+	</section>
+	<!-- End Agency Section -->
+
+	<!-- Management Section -->
+    <!--<section class="management-section">
+        <div>
+          <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+          <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          </defs>
+          <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+          </g>
+          </svg>
+        </div>
+	</section>-->
+	<!-- End Management Section -->
+
+	<!-- Clients Section Two -->
+    <section class="clients-section-two">
+		<div class="auto-container">
+			<!-- Title Box -->
+			<div class="title-box text-center">
+				<h2>주요 협력사</h2>
+				<div class="text">(주)루트소프트는 파트너 협력사와의 상생을 통해 신뢰 관계를 구축하고, 동반성장을 확대하고 있습니다..</div>
+			</div>
+			
+			<div class="sponsors-outer">
+				<!--Sponsors Carousel-->
+				<ul class="sponsors-carousel-two owl-carousel owl-theme">
+					    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/1.png" alt="쿠쿠 홈시스"></a></figure></li>
+						<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/2.png" alt="한국교통안전공단"></a></figure></li>
+						<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/3.png" alt="동국대학교"></a></figure></li>
+						<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/4.png" alt="현대그린푸드"></a></figure></li>
+						<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/5.png" alt="한국전력공사"></a></figure></li>
+						<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/6.png" alt="현대차"></a></figure></li>
+						<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/7.png" alt="농협"></a></figure></li>
+						<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/8.png" alt="법무부"></a></figure></li>
+						<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/9.png" alt="소방청"></a></figure></li>
+				</ul>
+			</div>
+			
+		</div>
+	</section>
+	<!-- End Clients Section Two -->
+
+	
+	
+	
+	<!-- Call To Action Section Two -->
+    <section class="call-to-action-section-two">
+		<div class="pattern-layer titlt" data-tilt data-tilt-max="2" style="background-image:url(images/background/pattern-24.png)"></div>
+		<div class="auto-container">
+			<div class="inner-container">
+				<h4>한 발 앞선 IT서비스로 고객의 경험과 가치를 우선합니다.</h4>
+				<div class="text">고객 만족을 넘어선 고객 감동을 제공하는 IT업계 최고 기업을 향해 노력하고 있습니다..</div>
+				<a href="https://www.saramin.co.kr/zf_user/company-info/view?csn=MlRER1hrTkcyN0o0RmVFdTRmOGhydz09" class="theme-btn btn-style-four" target="blank"><span class="txt">인재채용 확인</span></a>
+			</div>
+		</div>
+	</section>
+	<!-- End Call To Action Section Two -->
+	
+	<!-- Main Footer -->
+    <footer class="footer-style-two">
+		<div class="auto-container">
+		
+        	
+			<!-- Footer Bottom -->
+			<div class="footer-bottom">
+				<div class="auto-container">
+					<p class="font-w">(주)루트소프트 | 서울특별시 영등포구 선유로49길 23 아이에스비즈타워 2차 515호 | 대표이사 한정훈</p>
+					<p class="font-w">FAX : 0303-3446-0606 | TEL : 02-6956-5370 | E-MAIL : root@rootsoft.kr</p>
+					<div class="row clearfix">
+						<!-- Copyright -->
+						<div class="copyright-column col-lg-6 col-md-12 col-sm-12">
+							<div class="copyright">Copyright  ROOTSOFT 2018. All rights reserved.</div>
+						</div>
+						<div class="privacy-column col-lg-6 col-md-12 col-sm-12">
+							 <a href="about.html">회사소개</a>&nbsp; | &nbsp;<a href="contact.html">오시는길</a>
+						</div>
+					</div>
+							
+				</div>
+			</div>
+			
+		</div>
+	</footer>
+	
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-up"></span></div>
+
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.paroller.min.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/tilt.jquery.min.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/knob.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
